@@ -1,0 +1,16 @@
+{
+	"manifest_version": 2,
+	"name": "nBolsonaro",
+	"version": "1.0",
+	"description": "Troque todas as imagens do site por fotos do Bolsonaro.",
+	"icons": {
+    	"48": "icon48.png",
+        "128": "icon128.png"
+    },
+	"content_scripts": [
+	    {
+	      "matches": ["*://*/*"],
+	      "js": ["jquery.js", "nBolsonaro.js"]
+	    }
+  	]
+}
